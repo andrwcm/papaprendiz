@@ -439,7 +439,6 @@ section#semanario .grid.recomendado .btnLink::after{
   transition: .3s;
 }
 
-
 section#semanario .grid.recomendado .btnLink:hover::after{
   left: 30px;
 }
