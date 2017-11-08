@@ -442,3 +442,133 @@ section#semanario .grid.recomendado .btnLink::after{
 section#semanario .grid.recomendado .btnLink:hover::after{
   left: 30px;
 }
+
+section#tocadiscos{
+  width: 1100px;
+  height: 400px;
+  margin: 120px auto;
+  text-align: center;
+}
+
+section#tocadiscos .playlist{
+  width: 760px;
+  height: 400px;
+  float: left;
+  overflow: hidden;
+}
+
+section#tocadiscos .playlist .disk{
+  width: 400px;
+  height: 400px;
+  float: left;
+  display: inline-block;
+  position: relative;
+  z-index: 33;
+  animation-name: rotate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+section#tocadiscos .playlist .spotify{
+  width: 570px;
+  float: right;
+  height: 400px;
+  display: inline-block;
+  position: relative;
+  top: -400px;
+  z-index: 666;
+}
+
+section#tocadiscos .playlist .spotify iframe{
+  float: right;
+  display: inline-block;
+}
+
+section#tocadiscos .playlist .disk img{
+  width: 100%;
+  height: 100%;
+}
+
+section#tocadiscos .descripcion_tocadiscos{
+  float: right;
+  width: 300px;
+  text-align: left;
+}
+
+section#tocadiscos .descripcion_tocadiscos h2{
+  width: 170px;
+}
+
+section#contacto{
+  width: 100%;
+  height: 533px;
+  margin: auto;
+  text-align: center;
+  background: url(../assets/papaprendiz_bg.png);
+}
+
+section#contacto .container{
+  width: 950px;
+  height: 850px;
+  margin: 0px auto 40px;
+  padding-top: 80px;
+}
+
+section#contacto .container h2{
+  color: white;
+  margin: 0px auto;
+}
+
+section#contacto .container span.divider{
+  margin: 20px auto;
+}
+
+section#contacto .container p{
+  color: white;
+  width: 360px;
+  margin: 50px auto;
+}
+
+section#contacto .container .botones_redes{
+  width: 900px;
+  height: 276px;
+  margin: 50px auto;
+}
+
+section#contacto .container .botones_redes .redes{
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1px;
+  color: transparent;
+  width: 250px;
+  height: 250px;
+  margin: 15px;
+}
+
+section#contacto .container .botones_redes .redes.insta{
+  background: url(../assets/Instagram_btn@2x.png);
+  background-size: cover;
+}
+
+section#contacto .container .botones_redes .redes.face{
+  background: url(../assets/Facebook_btn@2x.png);
+  background-size: cover;
+}
+
+section#contacto .container .botones_redes .redes.twit{
+  background: url(../assets/twitter_btn@2x.png);
+  background-size: cover;
+}
+
+section#contacto .container .mail{
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 0   px;
+  color: var(--verde);
+}
