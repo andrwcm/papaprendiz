@@ -401,15 +401,19 @@ section#semanario .grid.recomendado{
 
 
 section#semanario .grid.recomendado h3{
-  top: 30px;
-  width: 30%;
+  top: 17px;
+  width: 90%;
   color: white;
 }
 
 section#semanario .grid.recomendado p{
-  top: 50px;
+  top: 30px;
   color: white;
   font-size: 14px;
+}
+
+section#semanario .grid.recomendado p a{
+  color: var(--verde);
 }
 
 section#semanario .grid.recomendado .btnLink{
@@ -418,7 +422,7 @@ section#semanario .grid.recomendado .btnLink{
   display: inline-block;
   float: left;
   position: relative;
-  top: 100px;
+  top: 60px;
   font-size: 17px;
   font-weight: 400;
   color: #797979;
