@@ -222,6 +222,39 @@ a#btnPrimary:hover::after{
   left: 67px;
 }
 
+
+a#btnSecundary{
+  color: white;
+  text-decoration: none;
+  background: transparent;
+  border: solid 1px;
+  border-color: var(--verde);
+  display: inline-block;
+  padding-top: 17px;
+  position: relative;
+  padding-bottom: 17px;
+  padding-left: 87px;
+  padding-right: 87px;
+}
+
+a#btnSecundary::after{
+  content: "";
+  background: url(../assets/icon_go_green.svg);
+  display: block;
+  float: right;
+  position: relative;
+  z-index: 888;
+  left: 60px;
+  width: 9px;
+  height: 13px;
+  top: 4px;
+  transition: .3s;
+}
+
+a#btnSecundary:hover::after{
+  left: 67px;
+}
+
 section#papaprediz ul#redes{
   padding: 0px;
   width: 512px;
@@ -287,7 +320,7 @@ section#articulo{
   background: var(--Oscuro);
   position: relative;
   z-index: 99;
-  margin: 70px auto;
+  margin: 70px auto 210px;
 
 }
 
@@ -303,6 +336,7 @@ section#articulo .container{
 section#articulo .container .imagen_articulo{
   width: 427px;
   height: 567px;
+  overflow: hidden;
   float: right;
   background: black;
 }
@@ -310,4 +344,102 @@ section#articulo .container .imagen_articulo{
 section#articulo .container .imagen_articulo img{
   width: 100%;
   height: 100%;
+  transition: .5s;
+}
+
+section#articulo .container:hover .imagen_articulo img{
+  width: 110%;
+  height: 110%;
+}
+
+section#articulo .container .texto_artículo{
+  width: 500px;
+  height: 300px;
+  color: white;
+  vertical-align: middle;
+  position: relative;
+  top: 18%;
+}
+
+section#semanario{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+}
+
+section#semanario .grid{
+  display: inline-block;
+  margin: 15px 1%;
+  width: 30%;
+  height: 350px;
+}
+
+section#semanario .grid h3{
+  text-align: left;
+  margin: 0px;
+  position: relative;
+  top: 100px;
+  float: left;
+}
+
+section#semanario .grid .divider{
+  margin: 170px 0px;
+}
+
+section#semanario .grid p{
+  text-align: left;
+  position: relative;
+  float: left;
+  top: -150px;
+}
+
+section#semanario .grid.recomendado{
+  background: #383838;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+
+section#semanario .grid.recomendado h3{
+  top: 30px;
+  width: 30%;
+  color: white;
+}
+
+section#semanario .grid.recomendado p{
+  top: 50px;
+  color: white;
+  font-size: 14px;
+}
+
+section#semanario .grid.recomendado .btnLink{
+  text-decoration: none;
+  background: transparent;
+  display: inline-block;
+  float: left;
+  position: relative;
+  top: 100px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #797979;
+}
+
+section#semanario .grid.recomendado .btnLink::after{
+  content: "";
+  background: url(../assets/icon_go_green.svg);
+  display: block;
+  float: right;
+  position: relative;
+  z-index: 888;
+  left: 20px;
+  width: 9px;
+  height: 13px;
+  top: 4px;
+  transition: .3s;
+}
+
+
+section#semanario .grid.recomendado .btnLink:hover::after{
+  left: 30px;
 }
